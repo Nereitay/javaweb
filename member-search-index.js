@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"es.kiwi.annotation","c":"AnnoDemo1","l":"add(int, int)","url":"add(int,int)"},{"p":"es.kiwi.annotation","c":"AnnoDemo1","l":"AnnoDemo1()","url":"%3Cinit%3E()"}]
