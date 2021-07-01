@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/day05_jdbc/day05_jdbc.iml" filepath="$PROJECT_DIR$/day05_jdbc/day05_jdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/day06_dataSource_jdbcTemplate/day06_dataSource_jdbcTemplate.iml" filepath="$PROJECT_DIR$/day06_dataSource_jdbcTemplate/day06_dataSource_jdbcTemplate.iml" />
       <module fileurl="file://$PROJECT_DIR$/day07_HTML/day07_HTML.iml" filepath="$PROJECT_DIR$/day07_HTML/day07_HTML.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day08_HTML&amp;CSS/day08_HTML&amp;CSS.iml" filepath="$PROJECT_DIR$/day08_HTML&amp;CSS/day08_HTML&amp;CSS.iml" />
       <module fileurl="file://$PROJECT_DIR$/day1_strengthen_basic/day1_strengthen_basic.iml" filepath="$PROJECT_DIR$/day1_strengthen_basic/day1_strengthen_basic.iml" />
     </modules>
   </component>

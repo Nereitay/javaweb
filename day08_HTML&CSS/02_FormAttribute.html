@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单项</title> <!--input：可以通过type属性值，改变元素展示的样式-->
+</head>
+<body>
+<!--type属性-->
+<form action="">
+    <!--text：文本输入框，默认值
+        placeholder：指定输入框的提示信息，当输入框的内容发生变化，会自动清空提示信息
+        label - id label的for属性一般会和 input 的 id属性值 对应。如果对应了，则点击label区域，会让input输入框获取焦点
+    -->
+    <label for="username">用户名</label> <input type="text" name="username" placeholder="请输入用户名" id="username"> <br>
+    <!--password：密码输入框-->
+    密码：<input type="password" name="password"> <br>
+    <!--radio:单选框
+            - 要想让多个单选框实现单选的效果，则多个单选框的name属性值必须一样
+            - 一般会给每一个单选框提供value属性，指定其被选中后提交的值
+            - checked属性，可以指定默认值
+    -->
+    性别：<input type="radio" name="gender" value="male"> 男
+    <input type="radio" name="gender" value="female" checked> 女
+    <br>
+    <!--checkbox：复选框
+            - 一般会给每一个单选框提供value属性，指定其被选中后提交的值
+            - checked属性，可以指定默认值
+    -->
+    爱好: <input type="checkbox" name="hobby" value="shopping"> 逛街
+    <input type="checkbox" name="hobby" value="java" checked> Java
+    <input type="checkbox" name="hobby" value="game"> Gamming
+    <br>
+    <!--file：文件选择框-->
+    图片： <input type="file" name="file"> <br>
+    <!--hidden：隐藏域，用于提交一些信息-->
+    隐藏域：<input type="hidden" name="id" value="aaa"> <br>
+    取色器：<input type="color" name="color"> <br>
+    生日： <input type="date" name="birthday"> <br>
+    生日： <input type="datetime-local" name="birthday1"> <br>
+    邮箱：<input type="email" name="email"> <br>
+    年龄：<input type="number" name="age"> <br>
+
+    省份：<!--select: 下拉列表  子元素：option，指定列表项-->
+    <select name="provinces" id="">
+        <option value="">--请选择--</option>
+        <option value="1" selected>Madrid</option>
+        <option value="2">Valencia</option>
+        <option value="3">Sevilla</option>
+    </select>
+    <br>
+    <!--textarea：文本域
+            cols：指定列数，每一行有多少个字符
+            rows：默认多少行 不够会自动扩
+    -->
+    自我描述：<textarea name="des" id="" cols="30" rows="10"></textarea>
+
+    <br>
+    <!--submit：提交按钮。可以提交表单-->
+    <input type="submit" value="提交">
+    <!--button：普通按钮-->
+    <input type="button" value="按钮">
+    <!--image：图片提交按钮 src属性指定图片的路径-->
+    <input type="image" src="img/regbtn.jpg">
+
+</form>
+
+</body>
+</html>
