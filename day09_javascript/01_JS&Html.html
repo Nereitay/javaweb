@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Js和html结合方式</title>
+    <!--
+        内部 JS 定义<script>，标签体内容就是js代码
+        外部 JS 定义<script>，通过src属性引入外部的js文件
+        * 注意：
+				1. <script>可以定义在html页面的任何地方。但是定义的位置会影响执行顺序。
+				2. <script>可以定义多个。
+    -->
+    <script>
+        alert("Hello world!")
+    </script>
+</head>
+<body>
+
+<input type="text">
+
+<script src="js/a.js"></script>
+
+</body>
+</html>

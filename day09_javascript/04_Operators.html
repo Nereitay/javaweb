@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>一元运算符</title>
+    <script>
+        var num = 3;
+        var a = num ++;
+
+        document.write("<br>");
+        document.write("num = " + num + "<br>");
+        document.write("a = " + a);
+        document.write("<hr>");
+
+        /*
+        * * +(-)：正负号
+			    * 注意：在JS中，如果运算数不是运算符所要求的类型，那么js引擎会自动的将运算数进行类型转换
+                    * 其他类型转number：
+                        * string转number：按照字面值转换。如果字面值不是数字，则转为NaN（不是数字的数字）
+                        * boolean转number：true转为1，false转为0
+        * */
+        var b = -3;
+        alert(b);
+
+        var c = +"123";
+        alert(c + 1);
+
+        var d = +"abc";// NaN
+        alert(typeof(d));
+
+        var flag = +true;
+        var f2 = +false;
+        document.write(typeof(flag) + "---" + flag + "<br>");
+        document.write(typeof(f2) + "---" + f2);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
