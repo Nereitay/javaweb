@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基础选择器</title>
+    <style>
+
+        div {
+            color: goldenrod;
+        }
+
+        .cls1 {
+            color: darkolivegreen;
+        }
+
+        #div1 {
+            color: crimson;
+        }
+
+
+    </style>
+</head>
+<body>
+<!--
+基础选择器
+    1. id： 选择器具体id属性值元素,建议在一个html页面中id值唯一,优先级最高
+        #id属性值{}
+    2. element：选择具有相同标签名称的选择器，优先级最低
+        标签名称{}
+    3. class：选择具有相同class属性值元素
+        .class属性值{}
+-->
+
+<div id="div1">Watermelon</div>
+<div>Banana</div>
+<div class="cls1">Kiwi</div>
+
+</body>
+</html>

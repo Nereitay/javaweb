@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>扩展选择器</title>
+    <style>
+        /* descendant selector*/
+        div p {
+            color: firebrick;
+        }
+
+        /* child selector*/
+        div > p {
+            border: 1px solid royalblue;
+        }
+
+
+        /*Universal selector
+            * {
+              text-align: center;
+              color: blue;
+            }
+        */
+
+        /*Grouping selector
+            h1, h2, p {
+                    text-align: center;
+                    color: red;
+            }
+
+        */
+
+        /*CSS[attribute] selector*/
+        input[type="text"] {
+            border: 5px solid;
+        }
+
+        /*Pseudo-classes 伪类选择器 is used to define a special state of an element*/
+        a:link {
+            color: deeppink;
+        }
+
+        a:hover {
+            color: darkolivegreen;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        a:visited {
+            color: royalblue;
+        }
+
+    </style>
+</head>
+<body>
+
+<div>
+    <p>Paragraph 1 in the div.</p>
+    <p>Paragraph 2 in the div.</p>
+    <section><p>Paragraph 3 in the div.</p></section> <!-- not Child but Descendant -->
+    <p>Paragraph 4 in the div.</p>
+</div>
+
+<p>Banana</p>
+
+<div>Kiwi</div>
+
+<input type="text"> <br>
+<input type="password"> <br>
+
+<a href="#">Google</a>
+
+</body>
+</html>
