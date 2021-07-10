@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Element对象</title>
+</head>
+<body>
+
+<a>点我</a>
+<input type="button" value="设置属性" id="btn_set">
+<input type="button" value="删除属性" id="btn_remove">
+
+<script>
+    var btn_set = document.getElementById("btn_set");
+    btn_set.onclick = function () {
+        var ele_a = document.getElementsByTagName("a")[0];
+        ele_a.setAttribute("href", "https://www.google.com");
+    }
+
+    var btn_remove = document.getElementById("btn_remove");
+    btn_remove.onclick = function () {
+        var ele_a = document.getElementsByTagName("a")[0];
+        ele_a.removeAttribute("href");
+    }
+
+</script>
+</body>
+</html>
