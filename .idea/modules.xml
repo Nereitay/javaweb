@@ -8,6 +8,9 @@
       <module fileurl="file://$PROJECT_DIR$/day07_HTML/day07_HTML.iml" filepath="$PROJECT_DIR$/day07_HTML/day07_HTML.iml" />
       <module fileurl="file://$PROJECT_DIR$/day08_HTML&amp;CSS/day08_HTML&amp;CSS.iml" filepath="$PROJECT_DIR$/day08_HTML&amp;CSS/day08_HTML&amp;CSS.iml" />
       <module fileurl="file://$PROJECT_DIR$/day09_javascript/day09_javascript.iml" filepath="$PROJECT_DIR$/day09_javascript/day09_javascript.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day10_javascript/day10_javascript.iml" filepath="$PROJECT_DIR$/day10_javascript/day10_javascript.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day11_bootstrap/day11_bootstrap.iml" filepath="$PROJECT_DIR$/day11_bootstrap/day11_bootstrap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day12_xml/day12_xml.iml" filepath="$PROJECT_DIR$/day12_xml/day12_xml.iml" />
     </modules>
   </component>
 </project>
