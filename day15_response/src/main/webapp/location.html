@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>路径</title>
+    <!--
+        * 路径写法：
+			1. 路径分类
+				1. 相对路径：通过相对路径不可以确定唯一资源
+					* 如：./index.html
+					* 不以/开头，以.开头路径
+
+					* 规则：找到当前资源和目标资源之间的相对位置关系
+						* ./：当前目录
+						* ../:后退一级目录
+			2. 绝对路径：通过绝对路径可以确定唯一资源
+					* 如：http://localhost/day15/responseDemo2		/day15/responseDemo2
+					* 以/开头的路径
+
+					* 规则：判断定义的路径是给谁用的？判断请求将来从哪儿发出
+						* 给客户端浏览器使用：需要加虚拟目录(项目的访问路径)
+							* 建议虚拟目录动态获取：request.getContextPath()
+							* <a> , <form> 重定向...
+						* 给服务器使用：不需要加虚拟目录
+							* 转发路径
+    -->
+
+</head>
+<body>
+
+<h1>找到当前资源和目标资源之间的相对位置关系</h1>
+
+<p>
+    当前资源：location.html
+    http://localhost:8080/day15_response/location.html
+</p>
+
+<p>
+    目标资源：
+    http://localhost:8080/day15_response/responseDemo2
+</p>
+
+<a href="./responseDemo2">
+    responseDemo2
+</a>
+
+</body>
+</html>
