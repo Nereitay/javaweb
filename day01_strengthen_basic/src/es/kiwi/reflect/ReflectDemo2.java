@@ -40,10 +40,11 @@ public class ReflectDemo2 {
         for (Field field : fields) {
             System.out.println(field);
         }
-        Field name = personClass.getDeclaredField("name");
+        Field field = personClass.getDeclaredField("name");
+        System.out.println(field.getName());
         //忽略访问权限修饰符的安全检查
-        name.setAccessible(true);//暴力反射
-        Object value = name.get(person); // 参数为对象
+        field.setAccessible(true);//暴力反射
+        Object value = field.get(person); // 参数为对象
         System.out.println(value);
     }
 }
