@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件绑定</title>
+    <!--
+        基本操作学习：
+		1. 事件绑定
+			//1.获取b1按钮
+            $("#b1").click(function(){
+                alert("abc");
+            });
+		2. 入口函数
+			 $(function () {
+	           
+   			 });
+			 window.onload  和 $(function) 区别
+                 * window.onload 只能定义一次,如果定义多次，后边的会将前边的覆盖掉
+                 * $(function)可以定义多次的。
+		3. 样式控制：css方法
+			 // $("#div1").css("background-color","red");
+      		$("#div1").css("backgroundColor","pink");
+    -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+       /* window.onload = function () {
+            // 给b1按钮添加单击事件
+            //1.获取b1按钮
+            $("#b1").click(function () {
+                alert("abc");
+            });
+        }*/
+       
+       /*$(function () {
+           $("#b1").click(function () {
+               alert("abc");
+           });
+       });*/
+
+       // window.onload 只能定义一次,如果定义多次，后边的会将前边的覆盖掉
+       /*window.onload = function () {
+           
+       }
+       window.onload = function () {
+           
+       }*/
+
+      /* $(function () {
+           $("#b1").click(function () {
+               alert(123);
+           })
+       })
+
+       $(function () {
+           $("#b1").click(function () {
+               alert(234);
+           })
+       })*/
+
+
+       $(function () {
+           // $("#div1").css("background-color", "blue");
+           $("#div1").css("backgroundColor", "pink");
+       })
+
+    </script>
+</head>
+<body>
+
+<div id="div1">div1...</div>
+<div id="div2">div2...</div>
+<input type="button" value="click" id="b1">
+
+
+
+</body>
+</html>
