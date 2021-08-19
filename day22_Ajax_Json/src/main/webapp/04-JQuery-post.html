@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery实现方式3_post</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!--
+    $.get()：发送get请求
+			* 语法：$.get(url, [data], [callback], [type])
+				* 参数：
+					* url：请求路径
+					* data：请求参数
+					* callback：回调函数
+					* type：响应结果的类型
+    -->
+    <script>
+        function fun() {
+            //使用$.get方式发送异步请求
+            $.post("ajaxServlet", {"username":"Lucy"}, function (data) {
+                alert(data);
+            }, "text")
+
+        }
+    </script>
+</head>
+<body>
+
+<input type="button" value="发送异步请求" onclick="fun();">
+<input type="text">
+
+</body>
+</html>
